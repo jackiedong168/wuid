@@ -1,6 +1,7 @@
 package wuid
 
 import (
+	"context"
 	"errors"
 	"io"
 
@@ -44,7 +45,7 @@ func (this *WUID) LoadH28FromRedis(newClient NewClient, key string) error {
 		}()
 	}
 
-	h28, err := client.Incr(key).Result()
+	h28, err := client.Incr(context.Background(), key).Result()
 	if err != nil {
 		return err
 	}
