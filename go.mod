@@ -1,4 +1,4 @@
-module github.com/edwingeng/wuid
+module github.com/jackiedong168/wuid
 
 go 1.12
 
