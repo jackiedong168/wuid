@@ -6,7 +6,7 @@ import (
 	"io"
 
 	"github.com/edwingeng/slog"
-	"github.com/edwingeng/wuid/internal"
+	"github.com/jackiedong168/wuid/internal"
 	"github.com/go-redis/redis"
 )
 
